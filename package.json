@@ -8,10 +8,12 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:agm-heatmap": "tsc -p src/agm-heatmap"
   },
   "private": true,
   "dependencies": {
+    "@agm/core": "^1.0.0-beta.0",
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
     "@angular/core": "^4.0.0",

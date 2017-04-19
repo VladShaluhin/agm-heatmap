@@ -1,0 +1,13 @@
+{
+  "name": "agm-heatmap",
+  "version": "0.0.1",
+  "main": "../../dist/index",
+  "typings": "../../dist/index",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^2.1.4"
+  }
+}
