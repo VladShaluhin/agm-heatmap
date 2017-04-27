@@ -19,7 +19,7 @@ const INPUTS = [ 'data', 'dissipating', 'gradient', 'maxIntensity', 'opacity', '
 const OUTPUTS = [];
 
 @Directive({
-  selector: 'amg-heatmap-layer',
+  selector: 'agm-heatmap-layer',
   inputs: INPUTS,
   outputs: OUTPUTS,
 })
@@ -36,7 +36,9 @@ export class AgmHeatmapLayer implements OnInit, OnChanges, OnDestroy{
 
   constructor(
     private _manager: HeatmapLayerManager
-  ) { }
+  ) {
+    console.log(this)
+  }
 
   ngOnInit() {
     if (this._addedToManager) {

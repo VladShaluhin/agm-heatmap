@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MapsAPILoader } from '@agm/core';
+import { locationsCount } from  './count';
 declare var google: any;
 
 
@@ -100,11 +101,8 @@ export class AppComponent {
   ) {
     this._apiLoader.load()
       .then(() => {
-        this.data = [
-          {location: new google.maps.LatLng(37.782, -122.443), weight: 2},
-          {location: new google.maps.LatLng(37.782, -122.441), weight: 3},
-          {location: new google.maps.LatLng(37.782, -122.439), weight: 2},
-        ]
+        this.data = locationsCount.map(({lat, lon, count}: any) => ({location: new google.maps.LatLng(+lat, +lon),  weight: +count}))
+        console.log(this)
       })
 
   }
