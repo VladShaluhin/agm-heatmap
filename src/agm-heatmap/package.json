@@ -1,6 +1,6 @@
 {
   "name": "agm-heatmap",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "main": "../../dist/index",
   "typings": "../../dist/index",
   "repository": {
