@@ -30,7 +30,6 @@ export class HeatmapLayerManager {
   }
 
   setOptions(layer: AgmHeatmapLayer, options) {
-    console.log(options)
     return this._layers.get(layer)
       .then(l => l.setOptions(options))
   }

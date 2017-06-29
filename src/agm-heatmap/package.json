@@ -11,6 +11,9 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
+  "dependencies": {
+
+  },
   "devDependencies": {
     "typescript": "^2.1.4"
   }

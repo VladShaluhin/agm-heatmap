@@ -1,17 +1,1 @@
-<h1>
-  {{title}}
-</h1>
-<button (click)="changeGradient()">Change gradient</button> <br>
-
-
-<button (click)="changeType()">Change type</button> {{mapTypeId}} <br>
-<button (click)="changeStyles()">Change styles</button>  <br>
-
-<!--<button onclick="changeRadius()">Change radius</button>-->
-<!--<button onclick="changeOpacity()">Change opacity</button>-->
-
-
-<agm-map [longitude]="10.36499" [latitude]="55.416" [zoom]="8" [mapTypeId]="mapTypeId" [styles]="styles">
-  <div test>2222</div>
-  <agm-heatmap-layer [data]="data" [gradient]="gradient" [radius]="20"></agm-heatmap-layer>
-</agm-map>
+<heatmap></heatmap>

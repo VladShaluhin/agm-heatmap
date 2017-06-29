@@ -1,18 +1,5 @@
 import { Directive, OnChanges, OnDestroy, OnInit, SimpleChanges } from '@angular/core';
 import { HeatmapLayerManager } from './heatmap-layer-manager';
-import { GoogleMapsAPIWrapper } from '@agm/core';
-
-
-@Directive({
-  selector: 'agm-map',
-  providers: [HeatmapLayerManager]
-})
-export class AgmMap {
-  constructor(
-    private _wrapper: GoogleMapsAPIWrapper
-  ) {}
-}
-
 
 
 const INPUTS = [ 'data', 'dissipating', 'gradient', 'maxIntensity', 'opacity', 'radius', 'options' ];

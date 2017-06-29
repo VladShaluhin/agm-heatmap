@@ -1,0 +1,22 @@
+<form [formGroup]="form">
+  <agm-map [longitude]="10.36499" [latitude]="55.416" [zoom]="8" [mapTypeId]="type" [styles]="styles">
+    <heatmap-control agmControl position="TOP_LEFT">
+      <h3>Color Palette</h3>
+      <ga-radio-group formControlName="gradient">
+        <ga-radio-button [value]="green">Green</ga-radio-button>
+        <ga-radio-button [value]="blue">Blue</ga-radio-button>
+      </ga-radio-group>
+      <h3>Switch map type</h3>
+      <ga-radio-group formControlName="type">
+        <ga-radio-button [value]="terrain">Terrain</ga-radio-button>
+        <ga-radio-button [value]="roadmap">Roadmap</ga-radio-button>
+      </ga-radio-group>
+      <h3>Color scheme</h3>
+      <ga-radio-group formControlName="styles">
+        <ga-radio-button [value]="day">Day</ga-radio-button>
+        <ga-radio-button [value]="night">Night</ga-radio-button>
+      </ga-radio-group>
+    </heatmap-control>
+    <agm-heatmap-layer [data]="data" [gradient]="gradient" [radius]="20"></agm-heatmap-layer>
+  </agm-map>
+</form>
