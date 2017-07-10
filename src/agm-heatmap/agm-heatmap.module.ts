@@ -27,6 +27,6 @@ export class AgmMap {
     AgmCoreModule
   ],
   declarations: [AgmHeatmapLayer, AgmMap, AgmControl],
-  exports: [AgmHeatmapLayer, AgmMap, AgmControl]
+  exports: [AgmHeatmapLayer, AgmMap, AgmControl, AgmCoreModule]
 })
 export class AgmHeatmapModule { }
